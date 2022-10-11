@@ -1,3 +1,19 @@
+# Front install
+
+### This is a stand alone front app buld by `creat-react-app`
+
+## Installation Flow:
+
+1. set the node ver via NVM: `nvm use 16.0.0`
+2. clone the Repo: `git clone https://github.com/drorsoft/optics_dr_green.git`
+3. install all modules: `npm i`
+
+### Main Modules that was installed:
+
+- Styled Components – for the lovely lib of styling the component with css on the jsx component file >>> npm i styled-components
+- Valtio – for having global state that it easy to work with >> npm i valtio
+- Testing ui – welll…… for testing – sometime you will want to do this on a different repo – consult with your favorite buddy or CTO >>> npm install cypress --save-dev
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
