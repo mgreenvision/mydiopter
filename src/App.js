@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import AstgTest from "./Pages/AstgTest/AstgTest";
 import DichotomyTest from "./Pages/DichotomyTest/DichotomyTest";
@@ -8,21 +8,21 @@ import DichotomyTest from "./Pages/DichotomyTest/DichotomyTest";
 function App() {
 	return (
 		<div className="App">
-			<Router>
+			<BrowserRouter>
 				{/* Home page */}
 				<Routes>
 					<Route exact path="/" element={<Home />} />
 
 					{/* ASTG test page */}
-					<Route path={"/astg"} element={<AstgTest />} />
+					<Route exact path="/astg" element={<AstgTest />} />
 
 					{/* DICHOTOMY test page */}
-					<Route path={"/dichotomy"} element={<DichotomyTest />} />
+					<Route exact path="/dichotomy" element={<DichotomyTest />} />
 
 					{/* TODO: to add 404-Comp */}
-					<Route path="*" element={<h2>404 - אין דף כזה באתר שלנו</h2>} />
+					<Route exact path="*" element={<h2>404 - אין דף כזה באתר שלנו</h2>} />
 				</Routes>
-			</Router>
+			</BrowserRouter>
 		</div>
 	);
 }
