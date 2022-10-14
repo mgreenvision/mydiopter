@@ -1,252 +1,55 @@
-/* add font: PlusJakartaSans-ExtraLight */
+/* add font: Roboto Condensed Regular */
 @font-face {
-	font-family: "Plus Jakarta Sans";
-	font-style: normal;
-	font-weight: 200;
-	src: url("./../public/fonts/PlusJakartaSans-ExtraLight.woff2") format("woff2"),
-		url("./../public/fonts/PlusJakartaSans-ExtraLight.woff") format("woff");
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 }
 
-/* add font: PlusJakartaSans-ExtraLightItalic */
+/* add font: Roboto Condensed Bold */
 @font-face {
-	font-family: "Plus Jakarta Sans";
-	font-style: italic;
-	font-weight: 200;
-	src: url("./../public/fonts/PlusJakartaSans-ExtraLightItalic.woff2")
-			format("woff2"),
-		url("./../public/fonts/PlusJakartaSans-ExtraLightItalic.woff")
-			format("woff");
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 }
 
-/* add font: PlusJakartaSans-Light */
+/* add font: Inter */
 @font-face {
-	font-family: "Plus Jakarta Sans";
-	font-style: normal;
-	font-weight: 300;
-	src: url("./../public/fonts/PlusJakartaSans-Light.woff2") format("woff2"),
-		url("./../public/fonts/PlusJakartaSans-Light.woff") format("woff");
-}
-
-/* add font: PlusJakartaSans-LightItalic */
-@font-face {
-	font-family: "Plus Jakarta Sans";
-	font-style: italic;
-	font-weight: 300;
-	src: url("./../public/fonts/PlusJakartaSans-LightItalic.woff2")
-			format("woff2"),
-		url("./../public/fonts/PlusJakartaSans-LightItalic.woff") format("woff");
-}
-
-/* add font: PlusJakartaSans-Regular */
-@font-face {
-	font-family: "Plus Jakarta Sans";
-	font-style: normal;
-	font-weight: 400;
-	src: url("./../public/fonts/PlusJakartaSans-Regular.woff2") format("woff2"),
-		url("./../public/fonts/PlusJakartaSans-Regular.woff") format("woff");
-}
-
-/* add font: PlusJakartaSans-Italic */
-@font-face {
-	font-family: "Plus Jakarta Sans";
-	font-style: italic;
-	font-weight: 400;
-	src: url("./../public/fonts/PlusJakartaSans-Italic.woff2") format("woff2"),
-		url("./../public/fonts/PlusJakartaSans-Italic.woff") format("woff");
-}
-
-/* add font: PlusJakartaSans-Medium */
-@font-face {
-	font-family: "Plus Jakarta Sans";
-	font-style: normal;
-	font-weight: 500;
-	src: url("./../public/fonts/PlusJakartaSans-Medium.woff2") format("woff2"),
-		url("./../public/fonts/PlusJakartaSans-Medium.woff") format("woff");
-}
-
-/* add font: PlusJakartaSans-MediumItalic */
-@font-face {
-	font-family: "Plus Jakarta Sans";
-	font-style: italic;
-	font-weight: 500;
-	src: url("./../public/fonts/PlusJakartaSans-MediumItalic.woff2")
-			format("woff2"),
-		url("./../public/fonts/PlusJakartaSans-MediumItalic.woff") format("woff");
-}
-
-/* add font: PlusJakartaSans-SemiBold */
-@font-face {
-	font-family: "Plus Jakarta Sans";
-	font-style: normal;
-	font-weight: 600;
-	src: url("./../public/fonts/PlusJakartaSans-SemiBold.woff2") format("woff2"),
-		url("./../public/fonts/PlusJakartaSans-SemiBold.woff") format("woff");
-}
-
-/* add font: PlusJakartaSans-SemiBoldItalic */
-@font-face {
-	font-family: "Plus Jakarta Sans";
-	font-style: italic;
-	font-weight: 600;
-	src: url("./../public/fonts/PlusJakartaSans-SemiBoldItalic.woff2")
-			format("woff2"),
-		url("./../public/fonts/PlusJakartaSans-SemiBoldItalic.woff") format("woff");
-}
-
-/* add font: PlusJakartaSans-Bold */
-@font-face {
-	font-family: "Plus Jakarta Sans";
-	font-style: normal;
-	font-weight: 700;
-	src: url("./../public/fonts/PlusJakartaSans-Bold.woff2") format("woff2"),
-		url("./../public/fonts/PlusJakartaSans-Bold.woff") format("woff");
-}
-
-/* add font: PlusJakartaSans-BoldItalic */
-@font-face {
-	font-family: "Plus Jakarta Sans";
-	font-style: italic;
-	font-weight: 700;
-	src: url("./../public/fonts/PlusJakartaSans-BoldItalic.woff2") format("woff2"),
-		url("./../public/fonts/PlusJakartaSans-BoldItalic.woff") format("woff");
-}
-
-/* add font: PlusJakartaSans-ExtraBold */
-@font-face {
-	font-family: "Plus Jakarta Sans";
-	font-style: normal;
-	font-weight: 800;
-	src: url("./../public/fonts/PlusJakartaSans-ExtraBold.woff2") format("woff2"),
-		url("./../public/fonts/PlusJakartaSans-ExtraBold.woff") format("woff");
-}
-
-/* add font: PlusJakartaSans-ExtraBoldItalic */
-@font-face {
-	font-family: "Plus Jakarta Sans";
-	font-style: italic;
-	font-weight: 800;
-	src: url("./../public/fonts/PlusJakartaSans-ExtraBoldItalic.woff2")
-			format("woff2"),
-		url("./../public/fonts/PlusJakartaSans-ExtraBoldItalic.woff") format("woff");
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 }
 
 :root {
-	/* BRANDED FONT FAMILY */
-	--font-topic: "Plus Jakarta Sans", sans-serif;
-	--font-running: "Plus Jakarta Sans", sans-serif;
+  /* BRANDED FONT FAMILY */
+  --font-topic: "Roboto Condensed", sans-serif;
+  --font-text: "Inter", sans-serif;
 
-	/* BRANDED FONT SIZE */
-	--text-size-heading1: 38px;
-	--text-size-heading-menu: 30px;
-	--text-size-heading2: 20px;
-	--text-size-para: 18px;
-	--text-size-error: 16px;
-	--text-size-neighbor: 14px;
-	--text-size-couter: 12px;
+  /* BRANDED FONT SIZE */
+  --text-size-h1: 48px;
+  --text-size-h2: 28px;
+  --text-size-running-text: 16px;
 
-	/* RULES FOR PADDING & MARGINS */
-	--main-padding: 29px;
-	--main-padding-negative: calc(0px - var(--main-padding));
-	--main-padding-double: calc(2 * var(--main-padding));
-	--button-padding: 9px 24px;
+  /* RULES FOR PADDING & MARGINS */
+  --main-padding: 29px;
+  --main-padding-negative: calc(0px - var(--main-padding));
+  --main-padding-double: calc(2 * var(--main-padding));
+  --button-padding: 9px 24px;
 
-	/* RULES FOR LAYOUT HEIGHT BY OS */
-	--regular-height: calc(100vh - 55px);
-	--iOS-height: calc(100vh - 55px - 70px);
+  /* RULES FOR LAYOUT HEIGHT BY OS */
+  --navbar-height: 40px; /* TO DO: change with actual size */
+  --footer-height: 55px; /* TO DO: change with actual size */
+  --layout-height: calc(100vh - var(--navbar-height) - var(--footer-height));
 
-	/* TRANSITIONS */
-	--transition-basic: 500ms;
-	--transition-buttons: 250ms;
-	--transition-breathing: 4000ms;
+  /* TRANSITIONS */
+  --transition-basic: 500ms;
 
-	/* BRANDED FONT COLORS */
-	--color-bg: #f6f6f6;
-	--color-black: #000000;
-	--color-grey: #e0e0e0;
-	--color-dark-gray: #2f2621;
-	--color-grey-medium: #cecece;
-	--color-grey-strong: #bbbbbb;
-	--color-soft-blue: #f0eff6;
-	--color-lilach: #d7cffb;
-	--color-skin: #eedfd2;
-	--color-pure-white: #ffffff;
-	--color-red-error: #f95025;
-
-	--color-pleasant: #ffaaad;
-	--color-energy: #fde681;
-	--color-chill: #93d4ce;
-
-	--color-gradient-1: linear-gradient(
-		360deg,
-		#d4cdff 0%,
-		var(--color-skin) 100%
-	);
-	--color-gradient-2: linear-gradient(
-		360deg,
-		var(--color-skin) 11.76%,
-		var(--color-bg) 100%
-	);
-	--color-gradient-chill: linear-gradient(
-		192.68deg,
-		#a1f6ee 2.86%,
-		#f6f6f6 89.35%
-	);
-	--color-gradient-pleasant: linear-gradient(
-		7.34deg,
-		#ffb9bc 0.84%,
-		#f6f6f6 96.01%
-	);
-	--color-gradient-energy: linear-gradient(
-		351.47deg,
-		#f2fabd 30.2%,
-		#f6f6f6 109.3%
-	);
-	--color-gradient-rainbow: linear-gradient(
-		0deg,
-		#b2fff1 0%,
-		#fde681 48.96%,
-		#ffb5b7 100%
-	);
-	--color-gradient-rainbow-90deg: linear-gradient(
-		90deg,
-		#b3fff1 0%,
-		#fde681 50.47%,
-		#ffb5b7 103.09%
-	);
+  /* BRANDED FONT COLORS */
+  --color-menu-bg: #658cf6;
+  --color-text: #5758d4;
+  --color-navbar: #9a57d4;
+  --color-menu-bg2: #8e6ceb;
+  --color-pink: #db65f6;
 }
-
-@media screen and (max-width: 330px) {
-	:root {
-		--text-size-heading1: 32px;
-		--text-size-heading2: 18px;
-		--text-size-para: 16px;
-		--text-size-error: 14px;
-		--text-size-neighbor: 12px;
-		--text-size-couter: 10px;
-
-		--main-padding: 17px;
-		--main-padding-negative: calc(0px - var(--main-padding));
-		--main-padding-double: calc(2 * var(--main-padding));
-		--button-padding: 8px 20px;
-	}
-}
-
-/* @font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/open-sans-v13-latin-regular.eot"); */ /* IE9 Compat Modes */
-/* src: local("Open Sans"), local("OpenSans"),
-    url("../fonts/open-sans-v13-latin-regular.eot?#iefix")
-      format("embedded-opentype"), */
-/* IE6-IE8 */ /* url("../fonts/open-sans-v13-latin-regular.woff2")
-      format("woff2"), */
-/* Super Modern Browsers */ /*  url("../fonts/open-sans-v13-latin-regular.woff")
-      format("woff"), */
-/* Modern Browsers */ /*  url("../fonts/open-sans-v13-latin-regular.ttf")
-format("truetype"), */
-/* Safari, Android, iOS */
-/* url("../fonts/open-sans-v13-latin-regular.svg#OpenSans") format("svg"); */ /* Legacy iOS */
-/* } */
-
-/* @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
