@@ -6,7 +6,7 @@ function Home() {
   return (
     <LayoutGrid>
       <Header>
-        <h3>FASTEST</h3>
+        <HeaderText>FASTEST</HeaderText>
       </Header>
       <LogoWrapper>
         <Logo />
@@ -40,13 +40,15 @@ const Header = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 60px auto 79px;
+  height: 65px;
+`;
+
+const HeaderText = styled.span`
   font-family: var(--font-topic);
   font-size: var(--text-size-h1);
   font-weight: 700;
-
-  height: 65px;
-  margin: 60px auto 79px;
-  color: #707070;
+  color: var(--color-text);
 `;
 
 const LogoWrapper = styled.div`
@@ -72,12 +74,13 @@ const StartButton = styled.div`
   height: 59px;
   margin: 79px auto 52px;
   border-radius: 29.5px;
-  border: solid 1px #707070;
-  background-color: #fff;
+  border: solid 1px var(--color-text);
+  background-color: white;
 `;
 
 const Icon = styled.img`
   height: var(--text-size-running-text);
+  color: var(--color-text);
 `;
 
 const Logo = styled.img`
@@ -91,5 +94,5 @@ const ButtonText = styled.span`
   height: 38px;
   /* padding: 3.3px 170.5px 3.3px 19px; */
   text-align: center;
-  color: #707070;
+  color: var(--color-text);
 `;
