@@ -43,7 +43,10 @@ const Header = styled.div`
   font-family: var(--font-topic);
   font-size: var(--text-size-h1);
   font-weight: 700;
-  background-color: aliceblue;
+
+  height: 65px;
+  margin: 60px auto 79px;
+  color: #707070;
 `;
 
 const LogoWrapper = styled.div`
@@ -59,21 +62,21 @@ const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: bisque;
 `;
 
 const StartButton = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: var(--button-padding);
-  border-radius: 20px;
-  border: solid 1px grey;
+  justify-content: center;
+  align-items: center;
+  height: 59px;
+  margin: 79px auto 52px;
+  border-radius: 29.5px;
+  border: solid 1px #707070;
+  background-color: #fff;
 `;
 
 const Icon = styled.img`
-  background-color: antiquewhite;
   height: var(--text-size-running-text);
 `;
 
@@ -83,5 +86,10 @@ const Logo = styled.img`
 
 const ButtonText = styled.span`
   font-family: var(--font-text);
-  font-size: var(--text-size-running-text);
+  font-size: var(--text-size-button);
+  width: 212px;
+  height: 38px;
+  /* padding: 3.3px 170.5px 3.3px 19px; */
+  text-align: center;
+  color: #707070;
 `;

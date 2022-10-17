@@ -28,8 +28,10 @@
   --font-text: "Inter", sans-serif;
 
   /* BRANDED FONT SIZE */
-  --text-size-h1: 48px;
+  --text-size-h1: 55px;
   --text-size-h2: 28px;
+  --text-size-button: 33px;
+  --text-size-fotter: 22px;
   --text-size-running-text: 16px;
 
   /* RULES FOR PADDING & MARGINS */
@@ -39,8 +41,8 @@
   --button-padding: 9px 24px;
 
   /* RULES FOR LAYOUT HEIGHT BY OS */
-  --navbar-height: 40px; /* TO DO: change with actual size */
-  --footer-height: 55px; /* TO DO: change with actual size */
+  --navbar-height: 40px;
+  --footer-height: 55px;
   --layout-height: calc(100vh - var(--navbar-height) - var(--footer-height));
 
   /* TRANSITIONS */

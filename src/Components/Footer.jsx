@@ -20,8 +20,13 @@ const FooterWrapper = styled.div`
   height: var(--footer-height);
 `;
 
-const Text = styled.p`
+const Text = styled.span`
   font-family: var(--font-topic);
   font-weight: 700;
   color: white;
+  width: 378px;
+  height: 26px;
+  font-size: var(--text-size-footer);
+  font-stretch: condensed;
+  text-align: center;
 `;
