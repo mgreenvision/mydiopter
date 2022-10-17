@@ -1,19 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import Footer from "../../Components/Footer";
+import IconFocus from "../../Media/Icon-focus.svg";
+import IconEye from "../../Media/Icon-eye.svg";
 
 function Home() {
   return (
     <LayoutGrid>
       <Header>
-        <HeaderText>FASTEST</HeaderText>
+        <HeaderText>FASTESTS</HeaderText>
       </Header>
       <LogoWrapper>
-        <Logo />
+        <Frame src={IconFocus} />
+        <Eye src={IconEye} />
       </LogoWrapper>
       <ButtonWrapper>
         <StartButton>
-          <Icon />
           <ButtonText>Start</ButtonText>
         </StartButton>
       </ButtonWrapper>
@@ -26,7 +28,7 @@ export default Home;
 
 const LayoutGrid = styled.div`
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 100vw;
   grid-template-rows: 1fr 100vw 1fr var(--footer-height);
   grid-template-areas:
     " header "
@@ -40,7 +42,7 @@ const Header = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px auto 79px;
+  padding: 10vh 0px 0px;
   height: 65px;
 `;
 
@@ -53,10 +55,12 @@ const HeaderText = styled.span`
 
 const LogoWrapper = styled.div`
   grid-area: logo;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   width: 100vw;
   height: 100vw;
-  background-color: var(--color-menu-bg2);
+  position: relative;
 `;
 
 const ButtonWrapper = styled.div`
@@ -72,19 +76,20 @@ const StartButton = styled.div`
   justify-content: center;
   align-items: center;
   height: 59px;
-  margin: 79px auto 52px;
+  margin: 9vh auto 6vh;
   border-radius: 29.5px;
   border: solid 1px var(--color-text);
   background-color: white;
 `;
 
-const Icon = styled.img`
-  height: var(--text-size-running-text);
-  color: var(--color-text);
+const Frame = styled.img`
+  width: 85vw;
 `;
 
-const Logo = styled.img`
-  background-color: var(--color-bg2);
+const Eye = styled.img`
+  width: 60vw;
+  position: absolute;
+  top: 31%;
 `;
 
 const ButtonText = styled.span`
