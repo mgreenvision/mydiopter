@@ -5,12 +5,16 @@ import IconMenu from "../../Media/Icon-menu.svg";
 import IconSwitch from "../../Media/Icon-switch.svg";
 import IconRefresh from "../../Media/Icon-refresh.svg";
 
-function Navbar({ topic = "" }) {
+function Navbar({ test, topic = "" }) {
   return (
     <NavbarWrapper>
       <IconGroup>
-        <NavbarIcon src={IconRefresh} border left="20px" />
-        <NavbarIcon src={IconSwitch} left="20px" />
+        {test && (
+          <React.Fragment>
+            <NavbarIcon src={IconRefresh} border left="20px" />
+            <NavbarIcon src={IconSwitch} left="20px" />
+          </React.Fragment>
+        )}
       </IconGroup>
       <Header>{topic}</Header>
       <IconGroup justify="right">
