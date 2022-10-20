@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Footer from "../../Components/Footer";
 import IconFocus from "../../Media/Icon-focus.svg";
 import IconEye from "../../Media/Icon-eye.svg";
+import IconTouch from "../../Media/Icon-touch.svg";
 
 function Home() {
   return (
@@ -16,7 +17,10 @@ function Home() {
       </LogoWrapper>
       <ButtonWrapper>
         <StartButton>
-          <ButtonText>Start</ButtonText>
+          <ButtonText>
+            <Touch src={IconTouch} />
+            Start
+          </ButtonText>
         </StartButton>
       </ButtonWrapper>
       <Footer></Footer>
@@ -58,6 +62,7 @@ const LogoWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vw;
   position: relative;
@@ -92,12 +97,17 @@ const Eye = styled.img`
   top: 31%;
 `;
 
+const Touch = styled.img`
+  height: calc(var(--button-text-height) - 10);
+  margin-right: 20px;
+`;
+
 const ButtonText = styled.span`
   font-family: var(--font-text);
   font-size: var(--text-size-button);
   width: 212px;
-  height: 38px;
-  /* padding: 3.3px 170.5px 3.3px 19px; */
+  height: var(--button-text-height);
+  padding: 3.3px 50px 0px;
   text-align: center;
   color: var(--color-text);
 `;
