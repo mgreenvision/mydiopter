@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Condensed:wght@400;700&display=swap");
+
 /* add font: Roboto Condensed Regular */
 @font-face {
   font-family: "Roboto Condensed";
@@ -21,6 +23,10 @@
   font-weight: 400;
   src: url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 
 :root {
   /* BRANDED FONT FAMILY */
@@ -31,10 +37,12 @@
   --text-size-h1: 55px;
   --text-size-h2: 28px;
   --text-size-button: 33px;
-  --text-size-fotter: 22px;
+  --text-size-footer: 22px;
+  --text-size-navbar: 30px;
   --text-size-running-text: 16px;
 
   /* RULES FOR PADDING & MARGINS */
+
   --main-padding: 29px;
   --main-padding-negative: calc(0px - var(--main-padding));
   --main-padding-double: calc(2 * var(--main-padding));
@@ -43,6 +51,7 @@
   /* RULES FOR LAYOUT HEIGHT BY OS */
   --navbar-height: 40px;
   --footer-height: 55px;
+  --button-text-height: 38px;
   --layout-height: calc(100vh - var(--navbar-height) - var(--footer-height));
 
   /* TRANSITIONS */

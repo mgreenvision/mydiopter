@@ -31,6 +31,7 @@ function Home() {
 export default Home;
 
 const LayoutGrid = styled.div`
+  height: 100vh;
   display: grid;
   grid-template-columns: 100vw;
   grid-template-rows: 1fr 100vw 1fr var(--footer-height);
@@ -88,7 +89,7 @@ const StartButton = styled.div`
 `;
 
 const Frame = styled.img`
-  width: 85vw;
+  width: 90vw;
 `;
 
 const Eye = styled.img`
