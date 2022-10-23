@@ -5,13 +5,13 @@ import IconMenu from "../../Media/Icon-menu.svg";
 import IconSwitch from "../../Media/Icon-switch.svg";
 import IconRefresh from "../../Media/Icon-refresh.svg";
 
-function Navbar({ test, topic = "" }) {
+function Navbar({ topic = "" }) {
   return (
     <NavbarWrapper>
       <IconGroup>
-        {test && (
+        {topic && (
           <React.Fragment>
-            <NavbarIcon src={IconRefresh} border left="20px" />
+            <NavbarIcon src={IconRefresh} left="20px" />
             <NavbarIcon src={IconSwitch} left="20px" />
           </React.Fragment>
         )}
@@ -26,6 +26,15 @@ function Navbar({ test, topic = "" }) {
 
 export default Navbar;
 
+const NavbarWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--navbar-height);
+  background-color: var(--color-menu-bg);
+`;
+
 const Header = styled.span`
   height: 36px;
   font-size: var(--text-size-navbar);
@@ -35,15 +44,6 @@ const Header = styled.span`
   text-align: center;
   font-family: var(--font-topic);
   width: 50vw;
-`;
-
-const NavbarWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: var(--navbar-height);
-  background-color: var(--color-menu-bg);
 `;
 
 const IconGroup = styled.div`

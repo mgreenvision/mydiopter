@@ -4,7 +4,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 function AstgTest() {
   return (
     <div>
-      <Navbar test topic="ASTG" />
+      <Navbar topic="ASTG" />
       AstgTest
     </div>
   );
