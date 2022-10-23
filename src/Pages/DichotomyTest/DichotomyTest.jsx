@@ -11,8 +11,15 @@ function DichotomyTest() {
       <CTA>
         <HeaderText>Pick stronger color</HeaderText>
       </CTA>
-      <UpperColorBox red="200" green="200" blue="200" />
-      <LowerColorBox red="100" green="100" blue="100" />
+      <UpperColorBox red="200" green="200" blue="200">
+        <OuterCircle />
+        <InnerCircle />
+      </UpperColorBox>
+      <LowerColorBox red="100" green="100" blue="100">
+        {" "}
+        <OuterCircle />
+        <InnerCircle />
+      </LowerColorBox>
     </DichotomyLayout>
   );
 }
@@ -44,12 +51,26 @@ const CTA = styled.div`
 
 const UpperColorBox = styled(ColorBox)`
   grid-area: upper-color;
-  background-color: #cecece;
   place-items: center;
 `;
 
 const LowerColorBox = styled(ColorBox)`
   grid-area: lower-color;
-  background-color: #767676;
   place-items: center;
+`;
+
+const OuterCircle = styled.div`
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: solid 20px #000;
+  position: relative;
+`;
+
+const InnerCircle = styled.div`
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid 10px #000;
+  position: absolute;
 `;

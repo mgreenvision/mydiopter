@@ -18,9 +18,9 @@ export const ColorBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /*   background-color: rgb(
+  background-color: rgb(
     ${(props) => props.red},
     ${(props) => props.green},
     ${(props) => props.blue}
-  ); */
+  );
 `;
