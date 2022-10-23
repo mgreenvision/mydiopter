@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Footer from "../../Components/Footer";
+import { HeaderText } from "../../Components/branded";
 import IconFocus from "../../Media/Icon-focus.svg";
 import IconEye from "../../Media/Icon-eye.svg";
 import IconTouch from "../../Media/Icon-touch.svg";
@@ -49,13 +50,6 @@ const Header = styled.div`
   align-items: center;
   padding: 10vh 0px 0px;
   height: 65px;
-`;
-
-const HeaderText = styled.span`
-  font-family: var(--font-topic);
-  font-size: var(--text-size-h1);
-  font-weight: 700;
-  color: var(--color-text);
 `;
 
 const LogoWrapper = styled.div`
