@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Footer from "../../Components/Footer";
-import { HeaderText } from "../../Components/branded";
+import { HeaderText, Button, ButtonText } from "../../Components/branded";
 import IconFocus from "../../Media/Icon-focus.svg";
 import IconEye from "../../Media/Icon-eye.svg";
 import IconTouch from "../../Media/Icon-touch.svg";
@@ -17,12 +17,12 @@ function Home() {
         <Eye src={IconEye} />
       </LogoWrapper>
       <ButtonWrapper>
-        <StartButton>
-          <ButtonText>
+        <Button>
+          <ButtonText start>
             <Touch src={IconTouch} />
             Start
           </ButtonText>
-        </StartButton>
+        </Button>
       </ButtonWrapper>
       <Footer></Footer>
     </LayoutGrid>
@@ -70,18 +70,6 @@ const ButtonWrapper = styled.div`
   align-items: center;
 `;
 
-const StartButton = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 59px;
-  margin: 9vh auto 6vh;
-  border-radius: 29.5px;
-  border: solid 1px var(--color-text);
-  background-color: white;
-`;
-
 const Frame = styled.img`
   width: 90vw;
 `;
@@ -95,14 +83,4 @@ const Eye = styled.img`
 const Touch = styled.img`
   height: calc(var(--button-text-height) - 10);
   margin-right: 20px;
-`;
-
-const ButtonText = styled.span`
-  font-family: var(--font-text);
-  font-size: var(--text-size-button);
-  width: 212px;
-  height: var(--button-text-height);
-  padding: 3.3px 50px 0px;
-  text-align: center;
-  color: var(--color-text);
 `;

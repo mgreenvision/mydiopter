@@ -1,14 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+import { Button, ButtonText } from "../../Components/branded";
+import DataBar from "../../Components/DataBar/DataBar";
 import Navbar from "../../Components/Navbar/Navbar";
 
 function AstgTest() {
   return (
     <ASTGLayout>
       <NavbarPlace topic="ASTG" />
-      <DataWrapper />
+      <DataWrapper>
+        <DataBar direction="12/6" percentage="70" />
+      </DataWrapper>
       <StarWrapper />
-      <ButtonWrapper />
+      <ButtonWrapper>
+        <FinishButton small>
+          <ButtonText>Finish</ButtonText>
+        </FinishButton>
+      </ButtonWrapper>
     </ASTGLayout>
   );
 }
@@ -34,7 +42,6 @@ const NavbarPlace = styled(Navbar)`
 const DataWrapper = styled.div`
   grid-area: click-data;
   place-items: center;
-  background-color: darkgoldenrod;
 `;
 
 const StarWrapper = styled.div`
@@ -45,6 +52,12 @@ const StarWrapper = styled.div`
 
 const ButtonWrapper = styled.div`
   grid-area: button;
+  display: flex;
+  flex-direction: column;
   place-items: center;
-  background-color: lavender;
+  justify-content: flex-end;
+`;
+
+const FinishButton = styled(Button)`
+  margin-bottom: var(--footer-height);
 `;
