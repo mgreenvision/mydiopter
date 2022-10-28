@@ -7,15 +7,27 @@ export default function AstgLines({
   num2,
   clickTrigger,
   opacityLevel,
+  finished,
 }) {
   return (
     <Wrapper angle={angle} opacity={opacityLevel} onClick={clickTrigger}>
       <Num angle={-angle}>{num1}</Num>
+      {finished && (
+        <ReportNum angle={-angle} opacity={opacityLevel}>
+          <Data>{Math.round(opacityLevel * 100)}%</Data>
+        </ReportNum>
+      )}
       <LineGroup>
         <Line />
         <Line />
         <Line />
       </LineGroup>
+      {finished && (
+        <ReportNum angle={-angle} opacity={opacityLevel} second>
+          <Data>{Math.round(opacityLevel * 100)}%</Data>
+        </ReportNum>
+      )}
+
       <Num angle={-angle}>{num2}</Num>
     </Wrapper>
   );
@@ -40,6 +52,32 @@ const Num = styled.div`
   font-size: var(--text-size-button);
   font-family: var(--font-text);
   transform: rotate(${(props) => props.angle}deg);
+`;
+
+const ReportNum = styled(Num)`
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--circle-height);
+  max-height: var(--circle-height);
+  border-radius: 50%;
+  border: solid 1px black;
+  opacity: ${(props) => props.opacity};
+  transform: rotate(${(props) => props.angle}deg)
+    /*  translate(${(props) =>
+      props.second ? "100px, -100px" : "-100px, 100px"}) */;
+  position: absolute;
+  top: ${(props) => (props.second ? "0" : "10%")};
+  bottom: ${(props) => (props.second ? "10%" : "0")};
+  left: ${(props) => (props.second ? "0" : "10%")};
+  right: ${(props) => (props.second ? "10%" : "0")};
+`;
+
+const Data = styled.p`
+  font-size: var(--text-size-running-text);
+  font-weight: 700;
 `;
 
 const LineGroup = styled.div`

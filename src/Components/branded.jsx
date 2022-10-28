@@ -55,3 +55,25 @@ export const ButtonText = styled.span`
   text-align: center;
   color: var(--color-text);
 `;
+
+export const StarWrapper = styled.div`
+  grid-area: star;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+`;
+
+export const MiddleCircle = styled.div`
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  border: solid 6px white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;

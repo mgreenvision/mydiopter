@@ -54,10 +54,11 @@ body {
   --navbar-height: 40px;
   --footer-height: 55px;
   --button-height: 59px;
+  --circle-height: 45px;
   --button-small-height: 37px;
   --button-text-height: 38px;
   --button-small-text-height: 32px;
-  --layout-height: calc(100vh - var(--navbar-height) - var(--footer-height));
+  --layout-height: calc(100vh - var(--navbar-height));
 
   /* TRANSITIONS */
   --transition-basic: 500ms;
