@@ -44,7 +44,7 @@ function AstgTest() {
 
   return (
     <ASTGLayout>
-      <NavbarPlace topic="ASTG" />
+      <NavbarPlace topic={finished ? "ASTG Report" : "ASTG"} />
       {finished ? (
         <ASTGReport opacities={opacities} finished={finished} />
       ) : (
