@@ -1,15 +1,27 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function DataBar({ direction, percentage }) {
+export default function DataBar({
+  direction,
+  percentage,
+  plusMinus,
+  setPlusMinus,
+}) {
   return (
     <GridWrapper>
       <FlexWrapper>
-        <PlusMinusIcon minus>-</PlusMinusIcon>
+        <PlusMinusIcon
+          isActive={!plusMinus}
+          onClick={() => setPlusMinus(false)}
+        >
+          -
+        </PlusMinusIcon>
         <DataView>
           {direction} | {percentage}%
         </DataView>
-        <PlusMinusIcon>+</PlusMinusIcon>
+        <PlusMinusIcon isActive={plusMinus} onClick={() => setPlusMinus(true)}>
+          +
+        </PlusMinusIcon>
       </FlexWrapper>
       <InfoText>LAST CLICKED</InfoText>
     </GridWrapper>
@@ -44,7 +56,7 @@ const PlusMinusIcon = styled.div`
   border-radius: 17px;
   padding-bottom: 1px;
   background-color: var(--color-grey);
-  opacity: ${(props) => (props.minus ? "36%" : "100%")};
+  opacity: ${(props) => (props.isActive ? "100%" : "36%")};
   color: white;
   font-family: var(--font-text);
   font-size: var(--text-size-navbar);
