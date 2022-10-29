@@ -40,18 +40,23 @@ body {
   --text-size-footer: 22px;
   --text-size-navbar: 30px;
   --text-size-running-text: 16px;
+  --text-size-info: 12px;
 
   /* RULES FOR PADDING & MARGINS */
 
   --main-padding: 29px;
   --main-padding-negative: calc(0px - var(--main-padding));
   --main-padding-double: calc(2 * var(--main-padding));
-  --button-padding: 9px 24px;
+  --button-padding: 0px 80px;
+  --button-small-padding: 0px 60px;
 
   /* RULES FOR LAYOUT HEIGHT BY OS */
   --navbar-height: 40px;
   --footer-height: 55px;
+  --button-height: 59px;
+  --button-small-height: 37px;
   --button-text-height: 38px;
+  --button-small-text-height: 32px;
   --layout-height: calc(100vh - var(--navbar-height) - var(--footer-height));
 
   /* TRANSITIONS */
@@ -63,4 +68,5 @@ body {
   --color-navbar: #9a57d4;
   --color-menu-bg2: #8e6ceb;
   --color-pink: #db65f6;
+  --color-grey: #707070;
 }
