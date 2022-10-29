@@ -4,8 +4,9 @@ import { NavbarIcon } from "../branded";
 import IconMenu from "../../Media/Icon-menu.svg";
 import IconSwitch from "../../Media/Icon-switch.svg";
 import IconRefresh from "../../Media/Icon-refresh.svg";
+import { Link } from "react-router-dom";
 
-function Navbar({ refreshPage, topic = "" }) {
+function Navbar({ refreshPage, test, topic = "" }) {
   return (
     <NavbarWrapper>
       <IconGroup>
@@ -16,7 +17,9 @@ function Navbar({ refreshPage, topic = "" }) {
               left="20px"
               onClick={() => refreshPage}
             />
-            <NavbarIcon src={IconSwitch} left="20px" />
+            <Link to={test === "ASTG" ? "/dichotomy" : "/astg"}>
+              <NavbarIcon src={IconSwitch} left="20px" />
+            </Link>
           </React.Fragment>
         )}
       </IconGroup>

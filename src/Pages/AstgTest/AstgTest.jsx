@@ -54,6 +54,7 @@ function AstgTest() {
     <ASTGLayout>
       <NavbarPlace
         topic={finished ? "ASTG Report" : "ASTG"}
+        test="ASTG"
         refreshPage={() => refreshASTG}
       />
       {finished ? (

@@ -7,7 +7,7 @@ import { HeaderText } from "../../Components/branded";
 function DichotomyTest() {
   return (
     <DichotomyLayout>
-      <NavbarPlace topic="DICHOTOMY" />
+      <NavbarPlace topic="DICHOTOMY" test="dichotomy" />
       <Header>
         <HeaderText>Pick stronger color</HeaderText>
       </Header>
