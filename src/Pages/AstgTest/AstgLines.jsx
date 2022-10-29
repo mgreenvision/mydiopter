@@ -12,21 +12,21 @@ export default function AstgLines({
   return (
     <Wrapper angle={angle} opacity={opacityLevel} onClick={clickTrigger}>
       <Num angle={-angle}>{num1}</Num>
-      {finished && (
+      {/* {finished && (
         <ReportNum angle={-angle} opacity={opacityLevel}>
           <Data>{Math.round(opacityLevel * 100)}%</Data>
         </ReportNum>
-      )}
+      )} */}
       <LineGroup>
         <Line />
         <Line />
         <Line />
       </LineGroup>
-      {finished && (
+      {/* {finished && (
         <ReportNum angle={-angle} opacity={opacityLevel} second>
           <Data>{Math.round(opacityLevel * 100)}%</Data>
         </ReportNum>
-      )}
+      )} */}
 
       <Num angle={-angle}>{num2}</Num>
     </Wrapper>

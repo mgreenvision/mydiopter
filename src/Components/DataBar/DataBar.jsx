@@ -1,12 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function DataBar({
-  direction,
-  percentage,
-  plusMinus,
-  setPlusMinus,
-}) {
+export default function DataBar({ lastClicked, plusMinus, setPlusMinus }) {
   return (
     <GridWrapper>
       <FlexWrapper>
@@ -16,9 +11,7 @@ export default function DataBar({
         >
           -
         </PlusMinusIcon>
-        <DataView>
-          {direction} | {percentage}%
-        </DataView>
+        <DataView>{lastClicked}</DataView>
         <PlusMinusIcon isActive={plusMinus} onClick={() => setPlusMinus(true)}>
           +
         </PlusMinusIcon>

@@ -39,6 +39,7 @@ body {
   --text-size-button: 33px;
   --text-size-footer: 22px;
   --text-size-navbar: 30px;
+  --text-size-report: 26px;
   --text-size-running-text: 16px;
   --text-size-info: 12px;
 
@@ -48,7 +49,7 @@ body {
   --main-padding-negative: calc(0px - var(--main-padding));
   --main-padding-double: calc(2 * var(--main-padding));
   --button-padding: 0px 80px;
-  --button-small-padding: 0px 60px;
+  --button-small-padding: 0px 70px;
 
   /* RULES FOR LAYOUT HEIGHT BY OS */
   --navbar-height: 40px;

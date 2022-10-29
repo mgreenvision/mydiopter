@@ -14,8 +14,8 @@ import ASTGReport from "./ASTGReport";
 function AstgTest() {
   const [opacities, setOpacities] = React.useState([1, 1, 1, 1, 1, 1]);
   const [plusMinus, setPlusMinus] = React.useState(false);
-  const [lastClicked, setLastClicked] = React.useState(" - / - ");
-  const [percentage, setPercentage] = React.useState(" - ");
+  const [lastClicked, setLastClicked] = React.useState(" - / - | - %");
+
   const [finished, setFinished] = React.useState(false);
 
   const clickTrigger = (num) => {
@@ -28,8 +28,7 @@ function AstgTest() {
     }
     /* this part is setting the change to UI elements (DataBar, ASTG star) */
     setOpacities(temp);
-    setLastClicked(`${num}/${num + 6}`);
-    setPercentage(Math.round(temp[num - 1] * 100));
+    setLastClicked(`${num}/${num + 6} | ${Math.round(temp[num - 1] * 100)}%`);
     console.log(opacities);
   };
 
@@ -53,8 +52,7 @@ function AstgTest() {
             <DataBar
               plusMinus={plusMinus}
               setPlusMinus={setPlusMinus}
-              direction={lastClicked}
-              percentage={percentage}
+              lastClicked={lastClicked}
             />
           </DataWrapper>
           <StarWrapper>

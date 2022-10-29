@@ -46,12 +46,6 @@ export const ButtonText = styled.span`
   font-stretch: condensed;
   font-size: ${(props) =>
     props.start ? "var(--text-size-button)" : "var(--text-size-footer)"};
-
-  height: ${(props) =>
-    props.start
-      ? "var(--button-text-height)"
-      : "var(--button-small-text-height)"};
-
   text-align: center;
   color: var(--color-text);
 `;
@@ -59,11 +53,11 @@ export const ButtonText = styled.span`
 export const StarWrapper = styled.div`
   grid-area: star;
   position: relative;
-
   display: flex;
   flex-direction: column;
   place-items: center;
   justify-content: center;
+  opacity: ${(props) => props.opacity};
 `;
 
 export const MiddleCircle = styled.div`

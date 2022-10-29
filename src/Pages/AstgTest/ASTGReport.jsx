@@ -7,6 +7,7 @@ import {
   MiddleCircle,
 } from "../../Components/branded";
 import AstgLines from "./AstgLines";
+import ReportData from "./ReportData";
 
 export default function ASTGReport({ opacities, finished }) {
   const clickNoTrigger = () => {};
@@ -66,6 +67,13 @@ export default function ASTGReport({ opacities, finished }) {
 
         <MiddleCircle />
       </StarWrapper>
+      <ReportData data={opacities} />
+      <ButtonPlace>
+        {" "}
+        <Button small>
+          <ButtonText>Done</ButtonText>
+        </Button>
+      </ButtonPlace>
     </ReportLayout>
   );
 }
@@ -75,10 +83,20 @@ const ReportLayout = styled.div`
   grid-area: layout;
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 50px 100vw auto 20vh;
+  grid-template-rows: 50px 100vw auto calc(
+      var(--footer-height) + var(--button-small-height)
+    );
   grid-template-areas:
     " . "
     " star "
     " report-data "
     " button ";
+`;
+
+const ButtonPlace = styled.div`
+  grid-area: button;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 `;
