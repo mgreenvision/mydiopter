@@ -18,6 +18,12 @@ function AstgTest() {
 
   const [finished, setFinished] = React.useState(false);
 
+  const refreshASTG = () => {
+    setOpacities([1, 1, 1, 1, 1, 1]);
+    setPlusMinus(false);
+    setLastClicked(" - / - | - %");
+  };
+
   const clickTrigger = (num) => {
     /* this part is computing the change in opacity */
     let temp = opacities;
@@ -46,7 +52,10 @@ function AstgTest() {
 
   return (
     <ASTGLayout>
-      <NavbarPlace topic={finished ? "ASTG Report" : "ASTG"} />
+      <NavbarPlace
+        topic={finished ? "ASTG Report" : "ASTG"}
+        refreshPage={() => refreshASTG}
+      />
       {finished ? (
         <ASTGReport opacities={opacities} finished={finished} />
       ) : (
