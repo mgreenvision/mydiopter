@@ -21,10 +21,13 @@ function AstgTest() {
   const clickTrigger = (num) => {
     /* this part is computing the change in opacity */
     let temp = opacities;
+
     if (plusMinus && temp[num - 1] < 1) {
-      temp[num - 1] = temp[num - 1] + 0.1;
+      temp[num - 1] =
+        parseFloat(temp[num - 1].toPrecision(2)) + parseFloat(0.1);
     } else if (!plusMinus && temp[num - 1] >= 0.1) {
-      temp[num - 1] = temp[num - 1] - 0.1;
+      temp[num - 1] =
+        parseFloat(temp[num - 1].toPrecision(2)) - parseFloat(0.1);
     }
     /* this part is setting the change to UI elements (DataBar, ASTG star) */
     setOpacities(temp);

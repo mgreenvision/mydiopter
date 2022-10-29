@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default function ReportData({ data }) {
   const DataList = data.map((value, index) => {
     return (
-      <ReportLine>
+      <ReportLine key={index}>
         {index + 1}/{index + 7} BOLD {Math.round(value * 100)}%
       </ReportLine>
     );
