@@ -3,19 +3,48 @@ import styled from "styled-components";
 import Navbar from "../../Components/Navbar/Navbar";
 import { ColorBox } from "../../Components/branded";
 import { HeaderText } from "../../Components/branded";
+import greenPath from "../../Utils/greenPath.json";
 
 function DichotomyTest() {
+  const [colorPath, setColorPath] = React.useState("");
+  const [stepCount, setStepCount] = React.useState(0);
+
+  const choosePath = (colorPath, stepCount) => {
+    let nextStep;
+    if (colorPath === "green") {
+      let nextStep = greenPath[stepCount];
+    } else {
+      console.log("error");
+    }
+    return nextStep;
+  };
+
   return (
     <DichotomyLayout>
       <NavbarPlace topic="DICHOTOMY" test="dichotomy" />
       <Header>
         <HeaderText>Pick stronger color</HeaderText>
       </Header>
-      <UpperColorBox red="200" green="200" blue="200">
+      <UpperColorBox
+        red="0"
+        green="255"
+        blue="0"
+        onClick={(stepCount) => {
+          setColorPath("green");
+          setStepCount(stepCount + 1);
+          choosePath(colorPath, stepCount);
+        }}
+      >
         <OuterCircle />
         <InnerCircle />
       </UpperColorBox>
-      <LowerColorBox red="100" green="100" blue="100">
+      <LowerColorBox
+        color="red"
+        red="255"
+        green="0"
+        blue="0"
+        onClick={(color) => setColorPath(color)}
+      >
         <OuterCircle />
         <InnerCircle />
       </LowerColorBox>
@@ -59,16 +88,16 @@ const LowerColorBox = styled(ColorBox)`
 `;
 
 const OuterCircle = styled.div`
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   border: solid 20px #000;
   position: relative;
 `;
 
 const InnerCircle = styled.div`
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   border: solid 10px #000;
   position: absolute;
