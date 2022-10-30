@@ -39,6 +39,7 @@ body {
   --text-size-button: 33px;
   --text-size-footer: 22px;
   --text-size-navbar: 30px;
+  --text-size-report: 26px;
   --text-size-running-text: 16px;
   --text-size-info: 12px;
 
@@ -48,16 +49,17 @@ body {
   --main-padding-negative: calc(0px - var(--main-padding));
   --main-padding-double: calc(2 * var(--main-padding));
   --button-padding: 0px 80px;
-  --button-small-padding: 0px 60px;
+  --button-small-padding: 0px 70px;
 
   /* RULES FOR LAYOUT HEIGHT BY OS */
   --navbar-height: 40px;
   --footer-height: 55px;
   --button-height: 59px;
+  --circle-height: 45px;
   --button-small-height: 37px;
   --button-text-height: 38px;
   --button-small-text-height: 32px;
-  --layout-height: calc(100vh - var(--navbar-height) - var(--footer-height));
+  --layout-height: calc(100vh - var(--navbar-height));
 
   /* TRANSITIONS */
   --transition-basic: 500ms;

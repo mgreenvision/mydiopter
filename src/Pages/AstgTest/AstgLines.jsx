@@ -11,11 +11,13 @@ export default function AstgLines({
   return (
     <Wrapper angle={angle} opacity={opacityLevel} onClick={clickTrigger}>
       <Num angle={-angle}>{num1}</Num>
+
       <LineGroup>
         <Line />
         <Line />
         <Line />
       </LineGroup>
+
       <Num angle={-angle}>{num2}</Num>
     </Wrapper>
   );
