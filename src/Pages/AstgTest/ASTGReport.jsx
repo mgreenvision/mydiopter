@@ -9,7 +9,7 @@ import {
 import AstgLines from "./AstgLines";
 import ReportData from "./ReportData";
 
-export default function ASTGReport({ opacities, finished }) {
+export default function ASTGReport({ opacities }) {
   const clickNoTrigger = () => {};
 
   return (
@@ -21,7 +21,6 @@ export default function ASTGReport({ opacities, finished }) {
           num2="7"
           clickTrigger={clickNoTrigger}
           opacityLevel={opacities[0]}
-          finished={finished}
         />
         <AstgLines
           angle="150"
@@ -29,7 +28,6 @@ export default function ASTGReport({ opacities, finished }) {
           num2="8"
           clickTrigger={clickNoTrigger}
           opacityLevel={opacities[1]}
-          finished={finished}
         />
         <AstgLines
           angle="0"
@@ -37,7 +35,6 @@ export default function ASTGReport({ opacities, finished }) {
           num2="3"
           clickTrigger={clickNoTrigger}
           opacityLevel={opacities[2]}
-          finished={finished}
         />
 
         <AstgLines
@@ -46,7 +43,6 @@ export default function ASTGReport({ opacities, finished }) {
           num2="4"
           clickTrigger={clickNoTrigger}
           opacityLevel={opacities[3]}
-          finished={finished}
         />
         <AstgLines
           angle="60"
@@ -54,7 +50,6 @@ export default function ASTGReport({ opacities, finished }) {
           num2="5"
           clickTrigger={clickNoTrigger}
           opacityLevel={opacities[4]}
-          finished={finished}
         />
         <AstgLines
           angle="90"
@@ -62,14 +57,12 @@ export default function ASTGReport({ opacities, finished }) {
           num2="6"
           clickTrigger={clickNoTrigger}
           opacityLevel={opacities[5]}
-          finished={finished}
         />
 
         <MiddleCircle />
       </StarWrapper>
       <ReportData data={opacities} />
       <ButtonPlace>
-        {" "}
         <Button small>
           <ButtonText>Done</ButtonText>
         </Button>

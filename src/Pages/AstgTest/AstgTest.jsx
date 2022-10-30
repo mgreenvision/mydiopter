@@ -58,7 +58,7 @@ function AstgTest() {
         refreshPage={() => refreshASTG}
       />
       {finished ? (
-        <ASTGReport opacities={opacities} finished={finished} />
+        <ASTGReport opacities={opacities} />
       ) : (
         <TestLayout>
           <DataWrapper>
