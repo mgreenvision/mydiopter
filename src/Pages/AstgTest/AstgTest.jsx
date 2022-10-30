@@ -48,7 +48,7 @@ function AstgTest() {
     <ASTGLayout>
       <NavbarPlace topic={finished ? "ASTG Report" : "ASTG"} />
       {finished ? (
-        <ASTGReport opacities={opacities} finished={finished} />
+        <ASTGReport opacities={opacities} />
       ) : (
         <TestLayout>
           <DataWrapper>
