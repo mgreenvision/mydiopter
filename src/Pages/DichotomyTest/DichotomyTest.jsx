@@ -59,12 +59,12 @@ function DichotomyTest() {
           if (colorPath === "") {
             setColorPath("red");
             console.log("red");
-            setLowerBoxColor(colorPathData.redPicked[stepCount]);
+            setUpperBoxColor(colorPathData.redPicked[stepCount]);
           } else {
             if (colorPath === "red") {
-              setLowerBoxColor(colorPathData.redPicked[stepCount + 1]);
+              setUpperBoxColor(colorPathData.redPicked[stepCount + 1]);
             } else {
-              setLowerBoxColor(colorPathData.redPicked[stepCount + 1]);
+              setUpperBoxColor(colorPathData.redPicked[stepCount + 1]);
             }
             setStepCount((prev) => prev + 1);
           }
