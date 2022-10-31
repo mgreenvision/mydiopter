@@ -20,9 +20,9 @@ function Home() {
 				<Eye src={IconEye} />
 			</LogoWrapper>
 			<ButtonWrapper>
-				<Button>
+				<Button onClick={() => navigate("/astg")}>
 					<ButtonText start>
-						<Touch src={IconTouch} onClick={() => navigate("/astg")} />
+						<Touch src={IconTouch} />
 						Start
 					</ButtonText>
 				</Button>
