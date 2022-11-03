@@ -27,7 +27,7 @@ function DichotomyTest() {
 			setLowerBoxColor(colorPathData.greenPicked[stepCount]);
 
 		colorPath === "red" && setLowerBoxColor(colorPathData.redPicked[stepCount]);
-	}, [stepCount]);
+	}, [stepCount, colorPath]);
 
 	React.useEffect(() => {
 		setTimeout(function () {
