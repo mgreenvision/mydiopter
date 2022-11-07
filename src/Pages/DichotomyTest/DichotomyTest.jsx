@@ -68,7 +68,7 @@ function DichotomyTest() {
       >
         <OuterCircle />
         <InnerCircle />
-        <F>F</F>
+        <E>E</E>
       </UpperColorBox>
 
       <LowerColorBox
@@ -93,7 +93,7 @@ function DichotomyTest() {
       >
         <OuterCircle />
         <InnerCircle />
-        <F>F</F>
+        <E>E</E>
         <TextWaveLangth>
           {colorPath === "red"
             ? colorPathData.redPicked[stepCount].waveLength
@@ -126,7 +126,8 @@ const Header = styled.div`
   grid-area: header;
   display: flex;
   flex-direction: row;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
   height: ${(props) => props.h}px;
   opacity: ${(props) => (props.h === 0 ? 0 : 1)};
   display: ${(props) => props.remove && "none"};
@@ -159,7 +160,7 @@ const InnerCircle = styled.div`
   position: absolute;
 `;
 
-const F = styled.div`
+const E = styled.div`
   color: black;
   font-family: var(--font-text);
   font-size: var(--text-size-button);
