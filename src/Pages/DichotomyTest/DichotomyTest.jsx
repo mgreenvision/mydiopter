@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Navbar from "../../Components/Navbar/Navbar";
-import { ColorBox } from "../../Components/branded";
-import { HeaderText } from "../../Components/branded";
+import { ColorBox, HeaderText, MinusIcon } from "../../Components/branded";
+
 import colorPathData from "../../Utils/colorPathData.json";
 
 function DichotomyTest() {
@@ -21,6 +21,7 @@ function DichotomyTest() {
     waveLength: "",
   });
   const [removeTopic, setRemoveTopic] = React.useState(false);
+  const [opacity, setOpacity] = React.useState(100);
 
   React.useEffect(() => {
     colorPath === "green" &&
@@ -45,6 +46,10 @@ function DichotomyTest() {
         <HeaderText>Pick stronger color</HeaderText>
       </Header>
 
+      <SideButton right="5px" onClick={(prev) => setOpacity(prev - 10)}>
+        {" "}
+        |{" "}
+      </SideButton>
       <UpperColorBox
         red={upperBoxColor.red}
         green={upperBoxColor.green}
@@ -66,8 +71,8 @@ function DichotomyTest() {
           }
         }}
       >
-        <OuterCircle />
-        <InnerCircle />
+        <OuterCircle opacity={opacity} />
+        <InnerCircle opacity={opacity} />
         <E>E</E>
       </UpperColorBox>
 
@@ -91,8 +96,8 @@ function DichotomyTest() {
           }
         }}
       >
-        <OuterCircle />
-        <InnerCircle />
+        <OuterCircle opacity={opacity} />
+        <InnerCircle opacity={opacity} />
         <E>E</E>
         <TextWaveLangth>
           {colorPath === "red"
@@ -150,6 +155,7 @@ const OuterCircle = styled.div`
   border-radius: 50%;
   border: solid 13px #000;
   position: relative;
+  opacity: calc(${(props) => props.opacity} / 100);
 `;
 
 const InnerCircle = styled.div`
@@ -158,6 +164,7 @@ const InnerCircle = styled.div`
   border-radius: 50%;
   border: solid 6.5px #000;
   position: absolute;
+  opacity: calc(${(props) => props.opacity} / 100);
 `;
 
 const E = styled.div`
@@ -173,4 +180,21 @@ const TextWaveLangth = styled.div`
   transform: rotate(90deg);
   right: 0px;
   font-size: 45px;
+`;
+
+const SideButton = styled(MinusIcon)`
+  background-color: none;
+  border: solid 5px black;
+  height: 18px;
+  width: 18px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  -webkit-text-stroke: 3px black;
+  margin-right: ${(props) => props.right};
+  position: fixed;
+  top: 5px;
+  right: 5px;
 `;

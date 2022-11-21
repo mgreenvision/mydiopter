@@ -77,7 +77,7 @@ export const MinusIcon = styled.div`
   width: 34px;
   text-align: center;
   line-height: 34px;
-  border-radius: 17px;
+  border-radius: 50%;
   padding-bottom: 1px;
   font-family: var(--font-text);
   font-size: var(--text-size-navbar);
