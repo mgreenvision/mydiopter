@@ -46,9 +46,13 @@ function DichotomyTest() {
         <HeaderText>Pick stronger color</HeaderText>
       </Header>
 
-      <SideButton right="5px" onClick={(prev) => setOpacity(prev - 10)}>
+      <SideButton
+        hide={colorPath === ""}
+        right="5px"
+        onClick={() => setOpacity((prev) => prev - 10)}
+      >
         {" "}
-        |{" "}
+        -{" "}
       </SideButton>
       <UpperColorBox
         red={upperBoxColor.red}
@@ -184,17 +188,19 @@ const TextWaveLangth = styled.div`
 
 const SideButton = styled(MinusIcon)`
   background-color: none;
-  border: solid 5px black;
-  height: 18px;
-  width: 18px;
+  border: solid 3px white;
+  height: 20px;
+  width: 20px;
   text-align: center;
   line-height: 20px;
   font-size: 20px;
-  color: black;
+  color: white;
   font-weight: bold;
-  -webkit-text-stroke: 3px black;
+  -webkit-text-stroke: 1px white;
   margin-right: ${(props) => props.right};
   position: fixed;
-  top: 5px;
+  top: 6px;
   right: 5px;
+
+  display: ${(props) => props.hide && "none"};
 `;
