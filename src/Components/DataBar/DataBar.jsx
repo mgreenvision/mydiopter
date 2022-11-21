@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { MinusIcon } from "../branded";
 
 export default function DataBar({ lastClicked, plusMinus, setPlusMinus }) {
   return (
@@ -41,18 +42,10 @@ const FlexWrapper = styled.div`
   align-items: center;
   grid-area: bar;
 `;
-const PlusMinusIcon = styled.div`
-  height: 34px;
-  width: 34px;
-  text-align: center;
-  line-height: 34px;
-  border-radius: 17px;
-  padding-bottom: 1px;
+const PlusMinusIcon = styled(MinusIcon)`
   background-color: var(--color-grey);
   opacity: ${(props) => (props.isActive ? "100%" : "36%")};
   color: white;
-  font-family: var(--font-text);
-  font-size: var(--text-size-navbar);
 `;
 
 const DataView = styled.div`
